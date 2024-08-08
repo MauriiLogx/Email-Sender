@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Correo</title>
+</head>
+<body>
+    <h1>Enviar Correo</h1>
+    <form action="/send_email" method="post">
+        <label for="email">Correos Electrónicos (separados por comas):</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" required>
+        <br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
