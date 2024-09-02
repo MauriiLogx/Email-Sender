@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Enviar Correo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Enviar Correo</h1>
-    <form action="/send_email" method="post">
-        <label for="email">Correos Electrónicos (separados por comas):</label>
-        <input type="text" id="email" name="email" required>
+    <div class="form-container">
+    <h1 class="title">Email Sender</h1>
+    <form class="formulario" action="/send_email" method="post">
+        <div id="email-fields">
+            <label for="email">Correos Electrónicos:</label>
+            <input type="email" name="email" required>
+        </div>
         <br>
         <label for="subject">Asunto:</label>
         <input type="text" id="subject" name="subject" required>
@@ -18,6 +22,8 @@
         <br>
         <button type="submit">Enviar</button>
     </form>
+</div>
 </body>
 </html>
+
 
